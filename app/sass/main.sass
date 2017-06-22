@@ -1,0 +1,78 @@
+@import "base/mixins"
+@import "base/fonts"
+@import "base/libs"
+@import "base/vars"
+@import "base/extend"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 2.19
+	font-family: $font-default
+	overflow-x: hidden
+	opacity: 1
+	color: $color-default
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.container-fh, .container-fh .row,  .container-fh .column
+	position: relative
+	height: 100%
+
+.yok-title
+	font-family: chunkfive
+	color: $color-green-light
+	span
+		color: $color-green-dark
+
+.yok-btn
+	@extend %btn
+	background: $color-green-light
+	color: $color-white
+	font-weight: 900
+	text-transform: uppercase
+	padding: 20px 30px
+	border-radius: 37px
+	box-shadow: inset 0 0 0 1px $color-green-dark
+	@include animation(box-shadow, background, color)
+
+	&:hover
+		color: $color-white
+		text-decoration: none
+		background: darken($color-green-light, 3%)
+		box-shadow: inset 0 0 0 4px $color-green-dark
+
+@import "welcome"
+@import "city-of-love"
+
+@import "base/media" // Всегда в конце
