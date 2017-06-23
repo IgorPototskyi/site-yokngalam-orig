@@ -1,0 +1,234 @@
+.ittinery
+    padding: 70px 0 100px
+
+    &__title
+        width: 100%
+        text-align: center
+
+    &__descr
+        text-align: center
+        margin-top: 35px
+    
+    .yok-form, .yok-list
+        margin-top: 100px
+
+    .yok-form
+        background-color: $color-form-bg
+
+        &__title
+            width: 100%
+            height: 74px
+            text-align: center
+            background-image: url('../img/form-head.jpg')
+            line-height: 74px
+            color: $color-white
+        
+        &__container
+            padding: 25px 30px 85px 40px
+
+        &__datetime
+            color: $color-green-dark
+
+            &--next
+                margin-top: 80px
+
+        &__date
+            float: right
+            color: $color-green-dark
+            text-decoration: none
+            transition: color $time ease
+
+            &:hover
+                color: $color-green-light
+
+            .fa
+                margin: 0 10px
+
+        &__item
+            position: relative
+            width: 100%
+            height: 70px
+            border: 1px solid $color-form-border
+            border-radius: 5px
+            background-color: $color-white
+            overflow: hidden
+            padding: 10px 20px 10px 110px
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: 20px center
+            display: flex
+
+            &--batu
+                background-image: url('../img/batu-small.png')
+                
+                
+            &--bromo
+               background-image: url('../img/bromo-small.png') 
+               background-position: 20px 3px
+
+            &--empty
+                margin-top: 10px
+                background-color: #f5e99e
+                opacity: .5
+                border: 3px dashed #d8cb7d
+                font-size: 14px
+                color: #d8cb7d
+                padding: 0
+                
+
+        &__place
+            margin: auto 0
+            font-size: 24px
+
+        &__time
+            margin: auto 0 auto auto
+        
+        &__descr
+            margin: auto
+
+        &__btn
+            float: right
+            margin: 0 12px 12px 0
+            padding: 5px 20px
+            background-color: #f5e99e
+            color: #d8cb7d
+            border: none
+            outline: none
+            border-bottom-right-radius: 5px
+            border-bottom-left-radius: 5px
+            font-size: 14px
+            transition: background-color $time ease
+
+            &:hover
+                background-color: lighten(#f5e99e, 5%)
+
+            .fa
+                font-size: 26px
+                margin-left: 20px
+                vertical-align: middle
+
+        &__explain
+            position: relative
+            background-color: #f5e99e
+            margin: 0 12px 0 20px
+            padding: 12px 25px
+            color: #d8cb7d
+
+            &.active
+                font-weight: 700
+                border-bottom: 1px solid $color-form-border
+
+                // &:after
+                //     @extend %before 
+                //     width: 94%
+                //     height: 1px
+                //     background-color: $color-form-border
+                //     margin: 0 auto
+
+    &__pdf, &__print
+        margin: 20px 0 0 25px
+        float: right
+
+        .fa
+            margin-right: 10px
+
+    &__pdf
+        background-color: #c3f37f
+
+    &__print
+        background-color: #3ddbc7
+
+    .yok-list
+        &__title
+            color: $color-green-light
+            text-align: center
+            font-weight: 700
+
+            &:after
+                content: ''
+                display: block
+                width: 70px
+                height: 2px
+                margin: 5px auto
+                background-color: $color-green-light
+
+        &__sort
+            margin-top: 30px
+            font-size: 14px
+            color: $color-green-light
+
+            a
+                color: $color-default
+                text-decoration: none
+                transition: color $time ease
+
+                &:hover
+                    color: $color-dark
+
+        &__search
+            float: right
+            margin-right: 25px
+
+        &__label
+            font-weight: 700
+
+        &__choice
+            .fa
+                margin-left: 5px
+                vertical-align: middle
+
+        &__item
+            position: relative
+            width: 100%
+            height: 72px
+            border: 1px solid $color-default
+            border-radius: 5px
+            box-shadow: 0 2px 5px $color-default
+            margin-top: 20px
+            padding: 0 15px 0 20px
+            font-weight: 300
+
+        &__name
+            font-size: 24px
+            font-weight: 400
+            // color: $color-dark
+
+        &__img
+            width: 64px
+            height: 32px
+            position: absolute
+            right: 15px
+            top: 10px
+
+        &__details
+            position: absolute
+            bottom: 0
+            right: 15px
+            font-size: 14px
+            font-weight: 700
+            color: $color-green-light
+            text-decoration: none
+            transition: color $time ease
+
+            &:hover
+                color: $color-green-dark
+
+        &__time
+            position: absolute
+            bottom: 0
+            left: 20px
+            margin: 0
+            font-size: 14px
+
+            span
+                color: $color-green-light
+
+
+        
+
+
+            
+
+        
+
+        

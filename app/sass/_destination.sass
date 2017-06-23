@@ -1,7 +1,7 @@
 .dest
     position: relative
     background: $color-bg-dest
-    padding: 65px 0 75px
+    padding: 65px 0 55px
 
     &__link-reg
         position: relative
@@ -97,64 +97,64 @@
                 margin-left: 10px
                 font-size: 10px
 
-    .yok-card-right
-        height: 520px
-        background-image: url('../img/bg-card1.jpg')
-        background-position: center 15%
-        background-size: cover
-        
-        &__descr
-            position: absolute
-            width: 40%
-            top: 0
-            bottom: 0
-            right: 0
-            background-color: rgba($color-white, .93)
-            box-sizing: border-box
-            padding: 50px 35px 0 35px
+        &--right
+            height: 520px
+            background-image: url('../img/bg-card1.jpg')
+            background-position: center 15%
+            background-size: cover
+            
+            .yok-card__descr
+                position: absolute
+                width: 40%
+                top: 0
+                bottom: 0
+                right: 0
+                background-color: rgba($color-white, .93)
+                box-sizing: border-box
+                padding: 50px 35px 0 35px
 
-            &:before
-                left: -10px
-                background-color: #f5fafc
-                
-        &__link
-            bottom: 10px
-            left: -100px
+                &:before
+                    left: -10px
+                    background-color: #f5fafc
+                    
+            .yok-card__link
+                bottom: 10px
+                left: -100px
 
-    .yok-card-left
-        height: 360px
-        background-image: url('../img/bg-card2.jpg')
-        background-position: left 20%
-        background-size: cover
+        &--left
+            height: 360px
+            background-image: url('../img/bg-card2.jpg')
+            background-position: left 20%
+            background-size: cover
 
-        &__descr
-            position: absolute
-            width: 50%
-            top: 0
-            bottom: 0
-            left: 0
-            background-color: rgba($color-white, .93)
-            box-sizing: border-box
-            padding: 40px 25px 0 25px
+            .yok-card__descr
+                position: absolute
+                width: 50%
+                top: 0
+                bottom: 0
+                left: 0
+                background-color: rgba($color-white, .93)
+                box-sizing: border-box
+                padding: 40px 25px 0 25px
 
-            &:before
-                right: -10px
-                background-color: #f8f7f7
+                &:before
+                    right: -10px
+                    background-color: #f8f7f7
 
-    .yok-card-small
-        height: 360px
-        background-image: url('../img/bg-card3.jpg')
-        background-position: center 30%
+        &--small
+            height: 360px
+            background-image: url('../img/bg-card3.jpg')
+            background-position: center 30%
 
-        &__circle
-            @extend %cam
-            width: 154px
-            height: 154px
-            border-radius: 50%
-            background-color: rgba($color-white, .93)
+            .yok-card__circle
+                @extend %cam
+                width: 154px
+                height: 154px
+                border-radius: 50%
+                background-color: rgba($color-white, .93)
 
-        &__img
-            @extend %cam
+            .yok-card__img
+                @extend %cam
 
     .yok-pag
         width: 100%
