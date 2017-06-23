@@ -1,0 +1,193 @@
+.dest
+    position: relative
+    background: $color-bg-dest
+    padding: 65px 0 75px
+
+    &__link-reg
+        position: relative
+        float: right
+        color: $color-default
+        padding-left: 25px
+        margin-top: 15px
+        transition: all $time ease
+
+        &:hover
+            color: $color-default
+
+        .fa
+            position: absolute
+            top: 9px
+            left: 0
+            font-size: 20px
+    
+    &__text
+        margin-top: 35px
+
+    &__link-place
+        float: right
+        margin-top: 50px
+        text-transform: uppercase
+
+        a
+            color: $color-link
+            &:hover
+                text-decoration: underline
+
+            &.active
+                color: $color-default
+                font-weight: 700
+
+    .search
+        position: relative
+        margin-top: 50px
+        width: 235px
+        height: 36px
+        border-radius: 18px
+        border: 1px solid $color-default
+        background-color: $color-white
+        padding-left: 40px
+        overflow: hidden
+
+        &__icon
+            position: absolute
+            top: 7px
+            left: 10px
+            font-size: 20px
+
+        &__input
+            vertical-align: text-bottom
+            height: 34px
+            outline: none
+            border: none
+            font-size: 14px
+            color: $color-default
+
+    .yok-card
+        position: relative
+        width: 100%
+        background-repeat: no-repeat
+        margin-top: 20px
+
+        &__title
+            margin-top: 25px
+            color: $color-green-dark
+            font-weight: 300
+
+        &__descr
+            &:before
+                @extend %before
+                @extend %vam
+                width: 20px
+                height: 20px
+                transform: rotate(45deg)
+                background-color: rgba($color-white, .93)
+    
+        &__link
+            position: absolute
+            color: $color-white
+            transition: all $time ease
+            bottom: 10px
+            right: 20px
+            text-decoration: none
+            &:hover
+                color: $color-yellow
+
+            .fa
+                vertical-align: middle
+                margin-left: 10px
+                font-size: 10px
+
+    .yok-card-right
+        height: 520px
+        background-image: url('../img/bg-card1.jpg')
+        background-position: center 15%
+        background-size: cover
+        
+        &__descr
+            position: absolute
+            width: 40%
+            top: 0
+            bottom: 0
+            right: 0
+            background-color: rgba($color-white, .93)
+            box-sizing: border-box
+            padding: 50px 35px 0 35px
+
+            &:before
+                left: -10px
+                background-color: #f5fafc
+                
+        &__link
+            bottom: 10px
+            left: -100px
+
+    .yok-card-left
+        height: 360px
+        background-image: url('../img/bg-card2.jpg')
+        background-position: left 20%
+        background-size: cover
+
+        &__descr
+            position: absolute
+            width: 50%
+            top: 0
+            bottom: 0
+            left: 0
+            background-color: rgba($color-white, .93)
+            box-sizing: border-box
+            padding: 40px 25px 0 25px
+
+            &:before
+                right: -10px
+                background-color: #f8f7f7
+
+    .yok-card-small
+        height: 360px
+        background-image: url('../img/bg-card3.jpg')
+        background-position: center 30%
+
+        &__circle
+            @extend %cam
+            width: 154px
+            height: 154px
+            border-radius: 50%
+            background-color: rgba($color-white, .93)
+
+        &__img
+            @extend %cam
+
+    .yok-pag
+        width: 100%
+        margin-top: 70px
+        font-family: chunkfive, serif
+
+        &__list
+            list-style-type: none
+            padding: 0
+            text-align: center
+
+        &__item
+            display: inline-block
+            margin: 0 5px
+
+            &:first-child
+                display: none
+
+            &.active
+                font-size: 22px
+                .yok-pag__link
+                    color: $color-green-dark
+
+        &__link
+            color: $color-default
+            text-decoration: none
+            transition: color $time ease
+            
+            &:hover
+                color: $color-green-light
+
+
+
+
+    
+
