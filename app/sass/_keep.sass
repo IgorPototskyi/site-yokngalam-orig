@@ -1,0 +1,45 @@
+.keep
+    background-image: url('../img/bg-keep.jpg')
+    padding: 60px 0 50px 0
+
+    &__title
+        color: $color-white
+        margin-bottom: 0
+
+    &__descr
+        color: $color-white
+        margin-bottom: 0
+
+    .keep-form
+        margin-top: 10px
+        font-size: 0
+        
+        &__email, &__btn
+            box-sizing: border-box
+            height: 74px
+            border: 1px solid $color-default
+            font-size: 14px
+            font-style: italic
+            vertical-align: middle
+
+        &__email
+            padding: 10px 25px
+            border-right: none
+            border-top-left-radius: 5px
+            border-bottom-left-radius: 5px
+            width: 82%
+
+        &__btn
+            border-left: none
+            border-top-right-radius: 5px
+            border-bottom-right-radius: 5px
+            width: 18%
+            background-color: $color-green-dark
+            transition: background-color $time ease
+
+            .fa
+                font-size: 40px
+                color: $color-white
+
+            &:hover
+                background-color: darken($color-green-dark, 3%)
