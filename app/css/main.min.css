@@ -11232,7 +11232,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.welcome__content, .dest .yok-card--small .yok-card__circle, .dest .yok-card--small .yok-card__img {
+.welcome__content, .dest .yok-card--small .yok-card__circle, .dest .yok-card--small .yok-card__img, .footer .footer-nav__soclink .fa {
   display: block;
   position: absolute;
   top: 50%;
@@ -11335,6 +11335,65 @@ body {
     text-decoration: none;
     -webkit-box-shadow: inset 0 0 0 4px #01a2a6;
             box-shadow: inset 0 0 0 4px #01a2a6; }
+
+.yok-navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  color: #fff; }
+  .yok-navbar .nav-item {
+    padding: 0 10px;
+    margin-left: 3px;
+    margin-right: 3px; }
+    .yok-navbar .nav-item.active {
+      border: 2px solid #fff;
+      -webkit-border-radius: 30px;
+              border-radius: 30px; }
+    .yok-navbar .nav-item .nav-link {
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .yok-navbar .nav-item .nav-link:hover {
+        color: #ffffa6; }
+  .yok-navbar .yok-user {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .yok-navbar .yok-user__link {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 44px;
+      height: 44px;
+      -webkit-border-radius: 22px;
+              border-radius: 22px;
+      background-image: url("../img/face.jpg"); }
+      .yok-navbar .yok-user__link:hover {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05); }
+      .yok-navbar .yok-user__link .fa {
+        position: absolute;
+        top: 10px;
+        right: -15px; }
+    .yok-navbar .yok-user .dropdown-menu {
+      right: 0;
+      left: auto;
+      min-width: 0;
+      border: none;
+      background-color: transparent; }
+      .yok-navbar .yok-user .dropdown-menu .dropdown-item {
+        padding: 0;
+        color: #fff;
+        -webkit-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        transition: color 0.3s ease; }
+        .yok-navbar .yok-user .dropdown-menu .dropdown-item:hover {
+          color: #ffffa6;
+          background-color: transparent; }
 
 .welcome {
   position: relative;
@@ -11854,14 +11913,54 @@ body {
     width: 100%;
     font-size: 12px;
     color: #fff; }
-    .footer .footer-nav__social {
+    .footer .footer-nav__socials {
       list-style-type: none;
       float: right; }
-    .footer .footer-nav__soc {
-      display: inline-block; }
+    .footer .footer-nav__social {
+      display: inline-block;
+      margin: 10px 0 0 10px; }
+    .footer .footer-nav__soclink {
+      display: inline-block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #fff;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      font-size: 16px;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .footer .footer-nav__soclink:hover {
+        border-color: #29d9c2;
+        color: #29d9c2; }
+      .footer .footer-nav__soclink .fa {
+        color: inherit; }
+    .footer .footer-nav__list {
+      padding: 12px 0 0 0; }
+    .footer .footer-nav__item {
+      display: inline-block;
+      margin-right: 15px; }
+      .footer .footer-nav__item:after {
+        margin-left: 18px;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        border: 3px solid #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .footer .footer-nav__item:last-child:after {
+        display: none; }
     .footer .footer-nav__link {
       color: #fff;
-      text-decoration: none; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .footer .footer-nav__link:hover {
+        text-decoration: none;
+        color: #29d9c2; }
   .footer__copy {
     position: absolute;
     bottom: 20px;

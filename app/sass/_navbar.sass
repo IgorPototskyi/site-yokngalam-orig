@@ -1,0 +1,62 @@
+.yok-navbar
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 2
+    color: $color-white
+
+    .nav-item
+        padding: 0 10px
+        margin:
+            left: 3px
+            right: 3px
+        
+        &.active
+            border: 2px solid $color-white
+            border-radius: 30px
+        
+        .nav-link
+            color: $color-white
+            transition: all $time ease
+
+            &:hover
+                color: $color-yellow
+
+    .yok-user
+        display: flex
+
+        &__link
+            position: relative
+            margin: auto
+            padding: 0
+            width: 44px
+            height: 44px
+            border-radius: 22px
+            background-image: url('../img/face.jpg')
+
+            &:hover
+                transform: scale(1.05)
+
+            .fa
+                position: absolute
+                top: 10px
+                right: -15px
+
+        .dropdown-menu
+            right: 0
+            left: auto
+            min-width: 0
+            border: none
+            background-color: transparent
+
+            .dropdown-item
+                padding: 0
+                color: $color-white
+                transition: color $time ease
+
+                &:hover
+                    color: $color-yellow
+                    background-color: transparent
+
+
+            

@@ -8,16 +8,60 @@
         font-size: 12px
         color: $color-white
 
-        &__social
+        &__socials
             list-style-type: none
             float: right
         
-        &__soc
+        &__social
             display: inline-block
+            margin: 10px 0 0 10px
 
-        &__link
+
+        &__soclink
+            display: inline-block
+            position: relative
+            width: 30px
+            height: 30px
             color: $color-white
             text-decoration: none
+            border: 1px solid $color-white
+            border-radius: 50%
+            font-size: 16px
+            transition: all $time ease
+
+            &:hover
+                border-color: $color-green-light
+                color: $color-green-light
+
+            .fa
+                @extend %cam
+                color: inherit
+
+        &__list
+            padding: 12px 0 0 0
+
+        &__item
+            display: inline-block
+            margin-right: 15px
+
+            &:after
+                margin-left: 18px
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                border: 3px solid $color-white
+                border-radius: 50%
+
+            &:last-child:after
+                display: none
+        
+        &__link
+            color: $color-white
+            transition: all $time ease
+
+            &:hover
+                text-decoration: none
+                color: $color-green-light
 
 
     &__copy
