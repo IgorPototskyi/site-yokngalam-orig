@@ -18,8 +18,8 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,500i,700,900' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Lato:300,400,500,500i,700,900' rel='stylesheet'>
+	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -27,6 +27,51 @@
 
 <body>
 	<div class="welcome">
+	    <div class="container">
+	        <div class="row">
+	            <div class="yok-navbar">
+	    
+	                <nav class="navbar navbar-toggleable-sm">
+	                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	                        <span class="navbar-toggler-icon"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="#">Yok<span class="font-weight-bold">Ngalam</span></a>
+	    
+	                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	                        <ul class="navbar-nav ml-auto">
+	                            <li class="nav-item active">
+	                                <a class="nav-link" href="#">Home 
+	                                    <!--<span class="sr-only">(current)</span>-->
+	                                </a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="#">Destination</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="#">Ittinery</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="#">Review</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="#">Contact</a>
+	                            </li>
+	                            <li class="nav-item yok-user dropdown">
+	                                <a class="nav-link yok-user__link" href="#"id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                    <i class="fa fa-sort-desc"></i>
+	                                </a>
+	                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	                                    <a class="dropdown-item" href="#">Profile</a>
+	                                    <a class="dropdown-item" href="#">Logout</a>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </nav>
+	            </div>
+	        </div>
+	    </div>
+	
 	    <div class="container container-fh">
 	        <div class="welcome__content">
 	            <h1 class="welcome__title yok-title">Lets get <span>lost</span></h1>
@@ -40,11 +85,11 @@
 	    <div class="container">
 	        <div class="city__content">
 	            <div class="row">
-	                <div class="col-sm-6">
+	                <div class="col-sm-12 col-md-6">
 	                    <img class="city__image img-responsive" src="img/city-of-love.png" alt="city-of-love"></img>
 	                </div>
 	
-	                <div class="col-sm-6">
+	                <div class="col-sm-12 col-md-6">
 	                    <h2 class="city__title yok-title">City of <span>Love</span></h2>
 	                    <p class="city__text">Malang is the second largest city in East Java province, Indonesia. 
 	                        It has a history dating back to the ancient Mataram Kingdom. 
@@ -106,7 +151,7 @@
 	        </div>
 	
 	        <div class="row">
-	            <div class="col-sm-7">
+	            <div class="col-sm-12 col-md-7">
 	                <div class="yok-card yok-card--left">
 	                    <div class="yok-card__descr">
 	                        <img class="yok-card__img" src="img/bromo.png" alt="Bromo">
@@ -119,7 +164,7 @@
 	                </div>
 	            </div>
 	
-	            <div class="col-sm-5">
+	            <div class="col-sm-12 col-md-5">
 	                <div class="yok-card yok-card--small">
 	                    <div class="yok-card__circle">
 	                        <img class="yok-card__img" src="img/boat.png" alt="boat">
@@ -178,7 +223,7 @@
 	        </div>
 	
 	        <div class="row">
-	            <div class="col-sm-7">
+	            <div class="col-sm-12 col-md-7">
 	                <div class="yok-form">
 	                    <div class="yok-form__title">Your ittenary title here</div>
 	
@@ -220,7 +265,7 @@
 	                    
 	            </div>
 	
-	            <div class="col-sm-5">
+	            <div class="col-sm-12 col-md-5">
 	                <div class="yok-list">
 	                    <div class="yok-list__title">List of Destination</div>
 	
@@ -306,20 +351,20 @@
 	            </div>
 	
 	        </div>
-	        <span class="contact__or">or</span>
+	        <span class="contact__span">or</span>
 	    </div>
 	</div>
 	<div class="keep">
 	    <div class="container">
 	        <div class="row">
-	            <div class="col-sm-7">
+	            <div class="col-sm-12 col-md-7">
 	                <h2 class="yok-title keep__title">Keep in Touch</h2>
 	                <p class="keep__descr">We Will Give you latest information about Malang</p>
 	            </div>
 	
-	            <div class="col-sm-5">
+	            <div class="col-sm-12 col-md-5">
 	                <form class="keep-form" action="/subscribe" method="post" accept-charset="utf-8">
-	                    <input class="keep-form__email" type="email" placeholder="Type Email Here for Subscribe">
+	                    <input class="keep-form__email" type="email" placeholder="Type Email for Subscribe">
 	                    <button class="keep-form__btn" type="submit" class="footer-form-button">
 	                        <i class="fa fa-angle-right"></i>
 	                    </button>
@@ -328,21 +373,21 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="footer">
+	<footer class="footer">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-sm-12">
 	                <nav class="footer-nav">
 	
-	                    <ul class="footer-nav__social">
-	                        <li class="footer-nav__soc">
-	                            <a class="footer-nav__link" href="#"><i class="fa fa-facebook"></i></a>
+	                    <ul class="footer-nav__socials">
+	                        <li class="footer-nav__social">
+	                            <a class="footer-nav__soclink" href="#"><i class="fa fa-facebook"></i></a>
 	                        </li>
-	                        <li class="footer-nav__soc">
-	                            <a class="footer-nav__link" href="#"><i class="fa fa-twitter"></i></a>
+	                        <li class="footer-nav__social">
+	                            <a class="footer-nav__soclink" href="#"><i class="fa fa-twitter"></i></a>
 	                        </li>
-	                        <li class="footer-nav__soc">
-	                            <a class="footer-nav__link" href="#"><i class="fa fa-instagram"></i></a>
+	                        <li class="footer-nav__social">
+	                            <a class="footer-nav__soclink" href="#"><i class="fa fa-instagram"></i></a>
 	                        </li>
 	                    </ul>
 	
@@ -365,7 +410,7 @@
 	        <div class="yok-colors__item yok-colors__item--blue"></div>
 	        <div class="yok-colors__item yok-colors__item--dark"></div>
 	    </div>
-	</div>
+	</footer>
 	
 	<script src="js/scripts.min.js"></script>
 

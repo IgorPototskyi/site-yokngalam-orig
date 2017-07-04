@@ -25,7 +25,7 @@
 
     &__link-place
         float: right
-        margin-top: 50px
+        margin-top: 55px
         text-transform: uppercase
 
         a
@@ -97,6 +97,13 @@
                 margin-left: 10px
                 font-size: 10px
 
+        &__circle
+            @extend %cam
+            width: 154px
+            height: 154px
+            border-radius: 50%
+            background-color: rgba($color-white, .93)
+
         &--right
             height: 520px
             background-image: url('../img/bg-card1.jpg')
@@ -145,13 +152,6 @@
             height: 360px
             background-image: url('../img/bg-card3.jpg')
             background-position: center 30%
-
-            .yok-card__circle
-                @extend %cam
-                width: 154px
-                height: 154px
-                border-radius: 50%
-                background-color: rgba($color-white, .93)
 
             .yok-card__img
                 @extend %cam
